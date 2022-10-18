@@ -5,7 +5,8 @@ def get_choices():
     options = ['rock', 'paper', 'scissors']
     computer_choice = random.choice(options)
     choices = {"player" :  player_choice , "computer" : computer_choice}
-    return choices
+    return 
+    print("rasheen")
 
 
 
@@ -24,10 +25,7 @@ def check_win(player, computer):
         else:
             return "Scissors cuts paper! You lose"
     elif player=="scissor":
-        if computer == "paper":
-            return "Scissor cuts rock! You win"
-        else:
-            return "Rock smashes scissors! You lose"
+    
         
 choices = get_choices()
 result = check_win(choices["player"], choices["computer"])
